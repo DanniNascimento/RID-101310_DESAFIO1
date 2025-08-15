@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Danni Nascimento</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!--Apresentação -->
+    <header class="apresentacao">
+        <div class="apresentacao-content">
+            <h1>Danni Nascimento</h1>
+            <p>Desenvolvedor Full Stack | Criando soluções digitais</p>
+            <div class="apresentacao-buttons">
+                <button onclick="showSection('carreira')">Carreira</button>
+                <button onclick="showSection('projetos')">Projetos</button>
+                <button onclick="showSection('contato')">Contato</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção dinâmica -->
+    <section id="conteudo-dinamico" class="conteudo">
+        <p>💡 Clique em um botão acima para saber mais sobre minha jornada.</p>
+    </section>
+
+    <!-- Contagem regressiva -->
+    <section class="countdown">
+        <p>🚀 Lançamento do portfólio em:</p>
+        <div id="timer"></div>
+    </section>
+
+    <!-- Formulário -->
+    <div class="form-section">
+        <h2>Entre em Contato</h2>
+        <form action="https://api.sheetmonkey.io/form/eJgXupT1xqzNPyeuh4L98p" method="post">
+            
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input id="name" type="text" name="Name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input id="email" type="email" name="Email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="Message" placeholder="Digite sua mensagem..." required></textarea>
+            </div>
+            
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <script src="./javascript/index.js"></script>
+</body>
+</html>
